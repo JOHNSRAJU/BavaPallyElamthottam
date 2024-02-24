@@ -1,0 +1,369 @@
+/* Styles for nav-bar */
+
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Styles for large image of the church and saint carousel */
+.carousel img {
+    width: 100%;
+}
+
+/* Styles for about section */
+.history-content {
+    padding: 20px;
+}
+
+/* Styles for officials section */
+.officials-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.official {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.official img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel {
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-item img {
+    width: 100%; /* Set image width to 100% of the parent container */
+}
+
+#officials {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+
+#history {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history-text {
+    width: 100%;
+    padding-right: 20px;
+}
+
+.history-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.read-more {
+    color: blue;
+    text-decoration: underline;
+}
+
+#church-info {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.church-photo {
+    flex: 1 1 30%; /* Take 30% width by default */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+.church-photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.church-info-text {
+    flex: 1 1 60%; /* Take 60% width by default */
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align cards to center */
+    margin: 10px; /* Adjust margin as needed */
+  }
+  
+  .card {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 250px; /* Adjust width as needed */
+    margin: 5px; /* Adjust margin as needed */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-text {
+    padding: 10px;
+  }
+  
+  .card:hover .card-image {
+    transform: scale(1.1);
+  }
+  
+  .card-title {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-text p {
+    font-family: Georgia, serif;
+    color: #333;
+  }
+  
+  .highlight {
+    color: #f00;
+  }
+  
+  /* Media queries for responsive layout */
+  @media (max-width: 768px) {
+    .card {
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      width: 50%;
+    }
+  }
+.points {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 767px) {
+    .carousel {
+        width: 100%; /* Increase carousel width for smaller screens */
+    }
+    
+    .carousel-item img {
+        width: 100%; /* Set image width to 100% of the parent container */
+    }
+
+    .church-photo,
+    .points {
+        flex: 1 1 100%; /* Take full width on smaller screens */
+    }
+}
+.short-text{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .history-text .read-more {
+        display: block; /* Ensure visibility on mobile */
+    }
+
+    .short-text {
+        display: block; /* Show short text on mobile */
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        height: 2.4rem; /* Adjust height to show two lines */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Show ellipsis if text overflows */
+    }
+
+    .long-text {
+        display: none; /* Hide long text on mobile */
+    }
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10% 0;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    padding-right: 30px;
+}
+.logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center logo and text */
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.title h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-functions {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center functions */
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+.social-icons-mob{
+    display: none;
+}
+/* Default styling for social icons */
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.social-icons-mob a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+}
+
+
+/* Media queries */
+@media (max-width: 768px) {
+    /* .logo-text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    } */
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav-functions {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        display: none;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .social-icons-mob{
+        display: flex;
+        justify-content: center;
+    
+    }
+}
+@media (min-width: 769px) {
+    .nav-functions {
+        justify-content: space-between; /* Add this to create space between logo and social icons */
+    }
+}
+.footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    
+}
